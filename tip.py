@@ -23,4 +23,4 @@ def conflict(state,nextx):
         print(line(pos))
 import random
 #随机打印一种
-prettyp(random.choice(list(queens(8))))
+print(random.choice(list(queens(8))))
