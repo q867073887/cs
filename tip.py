@@ -4,7 +4,7 @@ def conflict(state,nextx):
     for i in range(nexty):
         if abs(state[i]-nextx) in (0,nexty-i):#若下一个皇后和前面的皇后列相同或者在一条对角线上，则冲突
             return True
-    return 
+    return False
     def queens(num=8,state=()):
     '八皇后问题，这里num表示规模'
     for pos in range(num):
@@ -21,3 +21,6 @@ def conflict(state,nextx):
         return 'O'*(pos)+'X'+'O'*(length-pos-1)
     for pos in solution:
         print(line(pos))
+import random
+#随机打印一种
+prettyp(random.choice(list(queens(8))))
